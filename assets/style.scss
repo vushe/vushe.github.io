@@ -1,0 +1,41 @@
+---
+---
+
+:root {
+    font-size: 1px;
+}
+
+$thickness: 1rem;
+
+body {
+    font-family: 'Lato' !important;
+    font-size: 20rem !important;
+    color: red !important;
+
+    a {
+        display: inline-block;
+        color: orangered;
+
+        &::after {
+            content: '';
+            margin: 0 auto;
+            height: 2rem;
+            background-color: red;
+            width: 10px;
+            transition: .25s ease-in;
+        }
+
+        &:hover {
+            text-decoration: none;
+
+            &::after {
+                content: '';
+                display: block;
+                margin: 0 auto;
+                height: 2rem;
+                background-color: red;
+                width: 100%;
+            }
+        }
+    }
+}
