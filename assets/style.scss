@@ -6,34 +6,36 @@
 }
 
 $thickness: 1rem;
+$dark-grey: #444;
 
 body {
     font-family: 'Lato' !important;
     font-size: 20rem !important;
-    color: red !important;
+    color: $dark-grey !important;
 
     a {
-        display: inline-block;
+        display: inline-block !important;
         color: orangered;
+        transition: .25s ease-in;
+        height: 30rem;
 
         &::after {
+            border-bottom: 2px solid transparent !important;
             content: '';
             margin: 0 auto;
-            height: 2rem;
-            background-color: red;
             width: 10px;
             transition: .25s ease-in;
         }
 
         &:hover {
-            text-decoration: none;
+            text-decoration: none !important;
+            display: inline-block;
 
             &::after {
                 content: '';
                 display: block;
                 margin: 0 auto;
-                height: 2rem;
-                background-color: red;
+                border-color: orangered !important;
                 width: 100%;
             }
         }
