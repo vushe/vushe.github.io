@@ -5,6 +5,7 @@
 # sudo gem install jekyll
 # sudo gem install bundler
 # bundle install
+# sudo pip install livereload
 
 # Run livereload if not running yet
 `ps cax | grep livereload > /dev/null`
