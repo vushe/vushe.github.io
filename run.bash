@@ -6,5 +6,12 @@
 # sudo gem install bundler
 # bundle install
 
-gnome-terminal --window -e livereload
+# Run livereload if not running yet
+`ps cax | grep livereload > /dev/null`
+
+if [ $? != 0 ]; then
+    echo "Running LiveReload server"
+    gnome-terminal --tab -e 'livereload'
+fi
+
 bundle exec jekyll serve --watch
