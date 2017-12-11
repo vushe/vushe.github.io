@@ -2,7 +2,7 @@
 ---
 
 :root {
-    font-size: 1px;
+    //font-size: 1px;
 }
 
 $thickness: 1rem;
@@ -10,20 +10,20 @@ $dark-grey: #444;
 
 body {
     font-family: 'Lato' !important;
-    font-size: 20rem !important;
+    // font-size: 20rem !important;
     color: $dark-grey !important;
 
     a {
         display: inline-block !important;
         color: orangered;
         transition: .25s ease-in;
-        height: 30rem;
+        height: 1.5rem;
 
         &::after {
             border-bottom: 2px solid transparent !important;
             content: '';
             margin: 0 auto;
-            width: 10px;
+            width: .5rem;
             transition: .25s ease-in;
         }
 
