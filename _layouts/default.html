@@ -7,18 +7,29 @@
 
         {% include header.html %}
 
-        <div class="container-fluid" aria-label="Content">
-
-            <div class="row frontpage-top">
-                <img id="logo-chrome" class="col-md-6 offset-md-3" />
+        <div class="container-fluid frontpage-top" aria-label="Content">
+            <div class="row logo-row text-center">
+                <div class="col-md-6 offset-md-3">
+                        <img class="logo-chrome" src="/static/logo-chrome.svg" />
+                </div>
             </div>
+            <div class="row slogan-row text-center">
+                <div class="col-sm-12">
+                    <span>
+                        FRONT END, DESIGN, POWER DRIVES,
+                    <br>
+                        ELECTRONICS AND OTHER ART
+                    </span>
+                </div>
+            </div>
+        </div>
+
 
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     {{ content }}
                 </div>
             </div>
-        </div>
 
         {% include footer.html %}
         {% include scripts.html %}
