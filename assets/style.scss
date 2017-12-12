@@ -41,3 +41,20 @@ body {
         }
     }
 }
+
+.frontpage-top {
+    height: 110vh;
+    background-image: url('/static/frontpage-main-bg.jpg');
+    background-size: cover;
+}
+
+img#logo-chrome {
+    //background-image: url('/static/logo-chrome.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+}
+
+img {
+    border: 0 !important;
+}
