@@ -34,6 +34,8 @@ plugins:
 host: 0.0.0.0
 port: 4000
 
+#stage: 'production'
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
