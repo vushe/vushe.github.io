@@ -1,41 +1,64 @@
 ---
 ---
 
+// Basic metrics and colors
 $thickness: 1rem;
 $dark-grey: #444;
+$blue: #5479a5;
+$element-spacing: 1rem;
+$spacing-color: #fff;
+
+$large-font-size: 3rem;
+$info-row-height: 22rem;
+
+// Bootstrap breakpoints
+$max_xs: 767px;
+$min_sm: 768px;
+$max_sm: 991px;
+$min_md: 992px;
+$max_md: 1199px;
+$min_lg: 1200px;
+
+
 
 body {
     font-family: 'Lato' !important;
-    // font-size: 20rem !important;
     color: $dark-grey !important;
 
     a {
+        color: $dark-grey;
         display: inline-block !important;
-        color: orangered;
-        transition: .25s ease-in;
         height: 1.5rem;
+        transition: .25s ease-in;
 
-        &::after {
-            border-bottom: 2px solid transparent !important;
-            content: '';
-            margin: 0 auto;
-            width: .5rem;
-            transition: .25s ease-in;
-        }
-
-        &:hover {
-            text-decoration: none !important;
-            display: inline-block;
+        &.underlined {
 
             &::after {
+                border-bottom: 2px solid transparent !important;
                 content: '';
-                display: block;
                 margin: 0 auto;
-                border-color: orangered !important;
-                width: 100%;
+                width: .5rem;
+                transition: .25s ease-in;
+            }
+
+            &:hover {
+                text-decoration: none !important;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    margin: 0 auto;
+                    border-color: orangered !important;
+                    width: 100%;
+                }
             }
         }
     }
+}
+
+h1 {
+    line-height: 3;
 }
 
 h2 {
@@ -56,33 +79,51 @@ h2 {
     padding-bottom: 3rem;
 }
 
-.slogan-row {
+.slogan-row,
+h2 {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: $large-font-size !important;
     text-shadow: 1px 1px 2px #000;
     background-color: rgba(255, 255, 255, .3);
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     letter-spacing: .1rem;
+    padding-top: $large-font-size;
+    padding-bottom: $large-font-size;
 }
 
 .story,
 .contact {
-    height: 33.3vw;
+    height: $info-row-height;
+
+    & .pic-container {
+        background-size: cover !important;
+        background-position: 50% 50% !important;
+    }
+}
+
+.story .pic-container {
+    background: url('/static/story-bg.svg');
+}
+
+.contact .pic-container {
+    background: url('/static/contact-bg.svg');
 }
 
 .aside {
-    border: .5rem solid #fff;
+    border: $element-spacing / 2 solid $spacing-color;
 
     &.pic-container {
-        padding-top: 15vw;
-        background-color: lightcyan;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: ( $info-row-height - 3.5 * $large-font-size) / 2;
+        background-color: $blue;
     }
 
     &.text-container {
         background-color: #f7f7f7;
         font-size: 1.3rem;
-        padding: 10rem !important;
+        padding: $info-row-height / 3 !important;
     }
 }
 
@@ -96,3 +137,20 @@ h2 {
     }
 }
 
+
+// Adding more space for basic elemets
+.spacing-top {
+    border-top: $element-spacing / 2 solid $spacing-color;
+}
+
+.more-spacing-right {
+    border-right: $element-spacing solid $spacing-color;
+}
+
+.spacing-bottom {
+    border-bottom: $element-spacing / 2 solid $spacing-color;
+}
+
+.more-spacing-left {
+    border-left: $element-spacing solid $spacing-color;
+}
