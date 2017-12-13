@@ -67,8 +67,16 @@ h2 {
     text-shadow: 1px 1px 2px #000;
 }
 
+.navbar-brand {
+    padding-top: 0 !important;
+    background: url('/static/vd-nav-logo.svg');
+    background-size: cover;
+    width: 18rem;
+    height: 1.2rem;
+}
+
 .frontpage-top {
-    height: 110vh;
+    height: 50rem;
     background-image: url('/static/frontpage-main-bg.jpg');
     background-size: cover;
 }
@@ -90,6 +98,10 @@ h2 {
     letter-spacing: .1rem;
     padding-top: $large-font-size;
     padding-bottom: $large-font-size;
+}
+
+.slogan-row h1 {
+    line-height: 2;
 }
 
 .story,
