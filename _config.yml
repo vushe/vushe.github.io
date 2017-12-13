@@ -45,3 +45,6 @@ port: 4000
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+exclude: ['README.md', 'run.bash']
