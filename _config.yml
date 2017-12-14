@@ -24,6 +24,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 github_username: vushe
 codepen_username: vushe
+linkedin_username: valentin-dzhankhotov-160544b3
 
 # Build settings
 markdown: kramdown
@@ -34,7 +35,8 @@ plugins:
 host: 0.0.0.0
 port: 4000
 
-#stage: 'production'
+# Use production for production
+stage: development
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
