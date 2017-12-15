@@ -15,7 +15,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
                         {% for path in page_paths %}
                             {% assign my_page = site.pages | where: "path", path | first %}
                             {% if my_page.title %}
