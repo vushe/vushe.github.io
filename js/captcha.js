@@ -14,7 +14,7 @@ function displayMessage(message, message_type) {
         message + '</div>';
 
 
-    $("#status").html(message);
+    $("#status").html(html_message);
     $("#answer").text("");
 }
 
