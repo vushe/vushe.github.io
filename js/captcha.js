@@ -1,14 +1,20 @@
 function generateRandomNumbers() {
 
-    var rand_num1 = Math.floor(Math.random() * 10) + 1,
-        rand_num2 = Math.floor(Math.random() * 10) + 1;
+    var num1 = Math.floor(Math.random() * 10) + 1,
+        num2 = Math.floor(Math.random() * 10) + 1;
 
-    $("#question").text(rand_num1 + ' + ' + rand_num2);
+    $("#question").text(num1 + ' + ' + num2);
 
 }
 
-function displayMessage(message) {
-    $("#status").text(message);
+function displayMessage(message, message_type) {
+
+    var html_message='<div class="alert alert-' + message_type +
+        '" role = "alert" >' +
+        message + '</div>';
+
+
+    $("#status").html(message);
     $("#answer").text("");
 }
 
@@ -17,16 +23,12 @@ $("#contact-form").submit(function (event) {
     var answer = parseInt($("#answer").val()),
         equation = $("#question").text(),
         num_arr = equation.split(/[+]/),
-        sum = parseInt(num_arr[0]) + parseInt(num_arr[1]),
-        defaultPrevented = false;
+        sum = parseInt(num_arr[0]) + parseInt(num_arr[1]);
 
     if (answer === sum) {
-        displayMessage("Safe to submit the form");
-        if (defaultPrevented) {
-            $(this).unbind('submit').submit();
-        }
+        displayMessage("Thanks!", 'success');
     } else if (answer !== "") {
-        displayMessage("Number is incorrect. Please try again.");
+        displayMessage("Number is incorrect. Please try again.", 'warning');
         defaultPrevented = true;
         event.preventDefault();
     }
