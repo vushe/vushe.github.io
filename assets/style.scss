@@ -134,7 +134,12 @@ h2 {
     &.text-container {
         background-color: #f7f7f7;
         font-size: 1.3rem;
-        padding: $info-row-height / 7 $info-row-height / 3;
+        padding: $info-row-height / 7 $info-row-height / 5;
+        text-align: center;
+    }
+
+    & h1 {
+        line-height: 1.5;
     }
 }
 
@@ -222,13 +227,31 @@ textarea {
     }
 
     .pic-container {
-        display: block;
-        height: 400px;
+        // I assume here that width is around 98% - this is coming from Bootstrap
+        // And making padding-top fake square magic below
+        padding-top: 98vw !important;
+        position: relative;
+        margin: 0 auto;
+
+        & h2 {
+            top: (98vw - 1vw) / 2  - 15vw;
+
+            display: block;
+            position: absolute;
+            line-height: 1vw;
+            padding-top: 15vw;
+            padding-bottom: 15vw;
+            width: 100%;
+        }
     }
 
     .text-container {
         padding: 2rem !important;
         height: auto;
+
+        & h1 {
+            line-height: 1.5;
+        }
     }
 
     .more-spacing-right {
