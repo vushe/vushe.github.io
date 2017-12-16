@@ -218,6 +218,12 @@ textarea {
     }
 }
 
+@media (min-width: $min_md) {
+    .nav-link {
+        padding: 0 2vw !important;
+    }
+}
+
 @media (max-width: $max-sm) {
 
     .story,

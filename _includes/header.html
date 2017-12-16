@@ -3,7 +3,6 @@
 
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
-        <!-- <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
 
         {% if page_paths %}
 
@@ -24,6 +23,12 @@
                                 </li>
                             {% endif %}
                         {% endfor %}
+                        <li class="nav-item">
+                            <a href="#story" class="nav-link">STORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">CONTACT</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
