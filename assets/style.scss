@@ -48,7 +48,7 @@ body {
                     content: '';
                     display: block;
                     margin: 0 auto;
-                    border-color: orangered !important;
+                    border-color: darken( $blue, 10%) !important;
                     width: 100%;
                 }
             }
@@ -72,6 +72,15 @@ h2 {
     background-size: cover;
     width: 18rem;
     height: 1.2rem;
+}
+
+.nav-link {
+    color: #444 !important;
+    transition: .15s ease-in !important;
+
+    &:hover {
+        color: $blue !important;
+    }
 }
 
 .frontpage-top {
