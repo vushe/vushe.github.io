@@ -151,12 +151,15 @@ h2 {
     }
 }
 
-.social a {
-    color: $dark-grey !important;
+.social {
     font-size: 2rem;
     padding: 2rem !important;
 
-    .fa {
+    & a {
+        color: $dark-grey;
+    }
+
+    & .fa {
         padding: 0 1rem;
     }
 }
