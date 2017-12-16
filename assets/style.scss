@@ -234,8 +234,23 @@ textarea {
 }
 
 @media (max-width: $max_md) {
-    .slogan-row h1 {
-        line-height: 1.5;
+    .slogan-row {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        h1 {
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: $max_sm) {
+    .slogan-row {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        h1 {
+            line-height: 1.3;
+        }
     }
 }
 
