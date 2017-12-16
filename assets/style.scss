@@ -91,8 +91,8 @@ h2 {
 
 .logo-row,
 .slogan-row {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .slogan-row,
@@ -123,11 +123,11 @@ h2 {
 }
 
 .story .pic-container {
-    background: url('/static/story-bg.svg');
+    background: url('/static/story-bg.png');
 }
 
 .contact .pic-container {
-    background: url('/static/contact-bg.svg');
+    background: url('/static/contact-bg.png');
 }
 
 .aside {
@@ -157,6 +157,9 @@ h2 {
 
     & a {
         color: $dark-grey;
+        &:hover {
+            color: $blue;
+        }
     }
 
     & .fa {
@@ -230,13 +233,38 @@ textarea {
     }
 }
 
+@media (max-width: $max_md) {
+    .slogan-row h1 {
+        line-height: 1.5;
+    }
+}
+
 @media (min-width: $min_md) {
     .nav-link {
         padding: 0 2vw !important;
     }
 }
 
-@media (max-width: $max-sm) {
+@media (min-width: $min_sm) and (max-width: $max_sm) {
+    :root {
+        font-size: 11px;
+    }
+
+    .text-container {
+        padding: 2rem !important;
+    }
+}
+
+@media (min-width: $min_md) and (max-width: $max_md) {
+    :root {
+        font-size: 13px;
+    }
+    .text-container {
+        padding: 1rem !important;
+    }
+}
+
+@media (max-width: $max_xs) {
 
     .story,
     .contact {
@@ -263,6 +291,7 @@ textarea {
     }
 
     .text-container {
+        font-size: 1rem;
         padding: 2rem !important;
         height: auto;
 

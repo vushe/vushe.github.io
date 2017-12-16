@@ -10,13 +10,16 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="175.08752mm"
-   height="115.88669mm"
-   viewBox="0 0 175.08752 115.88669"
+   width="610mm"
+   height="403.74594mm"
+   viewBox="0 0 609.99998 403.74595"
    version="1.1"
    id="svg569"
    inkscape:version="0.92.2 (unknown)"
-   sodipodi:docname="contact-bg.svg">
+   sodipodi:docname="contact-bg.svg"
+   inkscape:export-filename="/home/valentin/git/vushe.github.io/static/contact-bg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs563">
     <clipPath
@@ -87,9 +90,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="402.30271"
-     inkscape:cy="-388.0487"
+     inkscape:zoom="0.1794917"
+     inkscape:cx="538.48423"
+     inkscape:cy="-234.7696"
      inkscape:document-units="mm"
      inkscape:current-layer="g299"
      showgrid="false"
@@ -113,13 +116,13 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0.60925937,0.58024635)">
+     transform="translate(0.60924576,288.43949)">
     <g
        transform="translate(-279.27069,-426.07481)"
        id="g299">
       <g
          id="g1480"
-         transform="translate(-51.404762,13.607143)">
+         transform="matrix(3.4839717,0,0,3.4839717,-871.27983,-1297.3688)">
         <rect
            inkscape:export-ydpi="96"
            inkscape:export-xdpi="96"
