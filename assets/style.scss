@@ -12,12 +12,12 @@ $large-font-size: 3rem;
 $info-row-height: 22rem;
 
 // Bootstrap breakpoints
-$max_xs: 767px;
-$min_sm: 768px;
-$max_sm: 991px;
-$min_md: 992px;
-$max_md: 1199px;
-$min_lg: 1200px;
+$max-xs: 767px;
+$min-sm: 768px;
+$max-sm: 991px;
+$min-md: 992px;
+$max-md: 1199px;
+$min-lg: 1200px;
 
 
 body {
@@ -234,7 +234,7 @@ textarea {
     }
 }
 
-@media (max-width: $max_md) {
+@media (max-width: $max-md) {
     .slogan-row {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -244,7 +244,7 @@ textarea {
     }
 }
 
-@media (max-width: $max_sm) {
+@media (max-width: $max-sm) {
     .slogan-row {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -262,13 +262,13 @@ textarea {
     }
 }
 
-@media (min-width: $min_md) {
+@media (min-width: $min-md) {
     .nav-link {
         padding: 0 2vw !important;
     }
 }
 
-@media (min-width: $min_sm) and (max-width: $max_sm) {
+@media (min-width: $min-sm) and (max-width: $max-sm) {
     :root {
         font-size: 11px;
     }
@@ -278,7 +278,7 @@ textarea {
     }
 }
 
-@media (min-width: $min_md) and (max-width: $max_md) {
+@media (min-width: $min-md) and (max-width: $max-md) {
     :root {
         font-size: 13px;
     }
@@ -287,7 +287,7 @@ textarea {
     }
 }
 
-@media (max-width: $max_xs) {
+@media (max-width: $max-xs) {
 
     .story,
     .contact {
