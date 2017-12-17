@@ -115,11 +115,20 @@ h2 {
 
 .story,
 .contact {
-    height: $info-row-height;
+    min-height: $info-row-height;
 
     & .pic-container {
         background-size: cover !important;
         background-position: 50% 50% !important;
+        position: relative;
+
+        h2 {
+            // Vertical align of the text
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100% !important;
+        }
     }
 }
 
@@ -238,7 +247,7 @@ textarea {
     .slogan-row {
         padding-top: 3rem;
         padding-bottom: 3rem;
-        h1 {
+        & h1 {
             line-height: 1.5;
         }
     }
