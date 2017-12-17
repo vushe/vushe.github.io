@@ -69,7 +69,8 @@ h2 {
 .navbar-brand {
     padding-top: 0 !important;
     background: url('/static/vd-nav-logo.svg');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 18rem;
     height: 1.2rem;
 }
@@ -251,6 +252,13 @@ textarea {
         h1 {
             line-height: 1.3;
         }
+    }
+
+    .navbar-brand {
+        background: url('/static/vd-nav-logo-mini.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 2rem;
     }
 }
 

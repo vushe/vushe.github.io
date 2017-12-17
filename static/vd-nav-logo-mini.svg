@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13.064832mm"
+   height="9.5756407mm"
+   viewBox="0 0 13.064832 9.5756407"
+   version="1.1"
+   id="svg302"
+   inkscape:version="0.92.2 (unknown)"
+   sodipodi:docname="vd-nav-logo-mini.svg">
+  <defs
+     id="defs296">
+    <clipPath
+       id="clipPath5340"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5342"
+         d="M 0,-8.3923341e-6 H 210 V 118.12498 H 0 Z"
+         style="opacity:1;fill:#444444;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.17991666;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       id="clipPath5336"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5338"
+         d="M 0,-8.3923341e-6 H 210 V 118.12498 H 0 Z"
+         style="opacity:1;fill:#444444;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.17991666;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.73726106"
+     inkscape:cx="642.88806"
+     inkscape:cy="148.74292"
+     inkscape:document-units="mm"
+     inkscape:current-layer="text4954"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata299">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(55.288114,-64.670513)">
+    <g
+       transform="translate(-70.031599,57.110853)"
+       id="g278">
+      <g
+         aria-label="VALENTIN DZHANKHOTOV"
+         transform="matrix(2.4194142,0,0,2.4194142,-0.07699016,1.1912198e-5)"
+         clip-path="url(#clipPath5340)"
+         style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:927.09999084%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text4954" />
+      <path
+         transform="matrix(0.24615031,0,0,0.24615031,-4.5698893,-10.000172)"
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         clip-path="url(#clipPath5336)"
+         sodipodi:nodetypes="cccccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path1229"
+         d="M 93.82258,81.726826 91.124895,74.182318 H 81.303732 L 93.050704,107.3973 h 9.721456 l 8.59753,-24.309845 m 3.04837,14.532056 -3.28318,9.645589 c 0.32724,0.004 0.6357,0.007 0.95388,0.0111 9.17204,-9e-5 16.60741,-7.435448 16.60745,-16.607536 -0.004,-8.15256 -5.92529,-15.096543 -13.97473,-16.388958 -1.28643,-0.106045 -1.39405,-0.103878 -2.78235,-0.09835 v 0.0013 h 0.82488 -7.96677 L 97.9112,93.653413"
+         style="opacity:1;fill:none;fill-opacity:0.64171125;fill-rule:nonzero;stroke:#444444;stroke-width:5.68427944;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
