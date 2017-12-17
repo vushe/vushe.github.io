@@ -66,6 +66,10 @@ h2 {
     text-shadow: 1px 1px 2px #000;
 }
 
+.navbar {
+    border-bottom: 2px solid $blue !important;
+}
+
 .navbar-brand {
     padding-top: 0 !important;
     background: url('/static/vd-nav-logo.svg');
