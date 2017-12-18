@@ -3,11 +3,10 @@
 
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
-        <!-- <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
 
         {% if page_paths %}
 
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
                 <a class="navbar-brand" href="#"></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,15 +14,21 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
                         {% for path in page_paths %}
                             {% assign my_page = site.pages | where: "path", path | first %}
                             {% if my_page.title %}
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                                    <a class="nav-link underlined" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}
+                        <li class="nav-item">
+                            <a href="#story" class="nav-link underlined">STORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link underlined">CONTACT</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
