@@ -94,7 +94,11 @@ h2 {
     background-size: cover;
 }
 
-.logo-row,
+.logo-row {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
 .slogan-row {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -258,6 +262,10 @@ textarea {
 }
 
 @media (max-width: $max-sm) {
+    .logo-row {
+        padding-top: 8rem;
+    }
+
     .slogan-row {
         padding-top: 1rem;
         padding-bottom: 1rem;
