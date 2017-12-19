@@ -11,7 +11,7 @@
         <div class="container-fluid">
             <div class="row top-space-fix"></div>
             <div class="row">
-                <div class="col-sm-4">
+                <!-- <div class="col-sm-4 col-card-wrapper">
                     <div class="card">
                         <img class="card-img-top" src="/static/frontpage-main-bg.jpg" alt="Card image cap" data-action="zoom">
                         <div class="card-block">
@@ -19,7 +19,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-card-wrapper">
                     <div class="card">
                         <img class="card-img-top" src="/static/frontpage-main-bg.jpg" alt="Card image cap" data-action="zoom">
                         <div class="card-block">
@@ -27,14 +27,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 col-card-wrapper">
                     <div class="card">
                         <img class="card-img-top" src="/static/frontpage-main-bg.jpg" alt="Card image cap" data-action="zoom">
                         <div class="card-block">
                             <p class="card-text">Page is under construction. Coming soon.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                {% for text in page.texts %}
+                    <div class="col-sm-4 col-card-wrapper">
+                        <div class="card">
+                            <img class="card-img-top" src="{{ page.images[forloop.index0] }}" alt="Card image cap" data-action="zoom">
+                            <div class="card-block">
+                                <p class="card-text">{{ text | textilize }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
 

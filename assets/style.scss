@@ -362,10 +362,27 @@ textarea {
     }
 }
 
+.col-card-wrapper {
+    padding: $element-spacing / 2 !important;
+}
+
+.card,
 .card-img-top {
     border-radius: 0;
+    border: none !important;
+    background: #f7f7f7;
+}
+
+.card-img-top,
+.card-text {
+    padding: $element-spacing !important;
+}
+
+.card-text {
+    font-size: 1.3rem;
 }
 
 .zoom-img {
     padding: 1rem !important;
+    background: transparent !important;
 }
