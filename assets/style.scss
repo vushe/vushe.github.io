@@ -57,7 +57,7 @@ body {
 }
 
 .top-space-fix {
-    height: 4.5rem;
+    height: 2.5rem;
 }
 
 h1 {
@@ -370,12 +370,16 @@ textarea {
 .card-img-top {
     border-radius: 0;
     border: none !important;
-    background: #f7f7f7;
 }
 
-.card-img-top,
-.card-text {
+.card {
+    background: #f7f7f7;
+    transition: .15s ease-out !important;
     padding: $element-spacing !important;
+
+    &:hover {
+        background-color: lighten(#a1cbff, 10%);
+    }
 }
 
 .card-text {

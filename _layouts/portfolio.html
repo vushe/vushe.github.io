@@ -11,40 +11,31 @@
         <div class="container-fluid">
             <div class="row top-space-fix"></div>
             <div class="row">
-                <!-- <div class="col-sm-4 col-card-wrapper">
-                    <div class="card">
-                        <img class="card-img-top" src="/static/frontpage-main-bg.jpg" alt="Card image cap" data-action="zoom">
-                        <div class="card-block">
-                            <p class="card-text">Page is under construction. Coming soon.</p>
-                        </div>
-                    </div>
+
+                <div class="col-lg-12">
+                    <h1>PORTFOLIO :: DESIGN AND WEB</h1>
                 </div>
-                <div class="col-sm-4 col-card-wrapper">
-                    <div class="card">
-                        <img class="card-img-top" src="/static/frontpage-main-bg.jpg" alt="Card image cap" data-action="zoom">
-                        <div class="card-block">
-                            <p class="card-text">Page is under construction. Coming soon.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-card-wrapper">
-                    <div class="card">
-                        <img class="card-img-top" src="/static/frontpage-main-bg.jpg" alt="Card image cap" data-action="zoom">
-                        <div class="card-block">
-                            <p class="card-text">Page is under construction. Coming soon.</p>
-                        </div>
-                    </div>
-                </div> -->
+
                 {% for text in page.texts %}
                     <div class="col-sm-4 col-card-wrapper">
                         <div class="card">
+                            <h3 class="card-title">{{ page.titles[forloop.index0] }}</h3>
                             <img class="card-img-top" src="{{ page.images[forloop.index0] }}" alt="Card image cap" data-action="zoom">
                             <div class="card-block">
                                 <p class="card-text">{{ text | textilize }}</p>
+                                <p>
+                                    <a class="card-link" href="{{ page.urls[forloop.index0] }}" targe="_blank">{{ page.url-descriptions[forloop.index0] }}</a>
+                                </p>
                             </div>
                         </div>
                     </div>
                 {% endfor %}
+
+                <div class="col-lg-12">
+                    <h1>POWER ELECTRONICS AND ELECTRIC DRIVES</h1>
+                </div>
+
+
             </div>
         </div>
 
