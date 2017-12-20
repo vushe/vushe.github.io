@@ -366,13 +366,9 @@ textarea {
     padding: $element-spacing / 2 !important;
 }
 
-.card,
-.card-img-top {
+.card {
     border-radius: 0;
     border: none !important;
-}
-
-.card {
     background: #f7f7f7;
     transition: .15s ease-out !important;
     padding: $element-spacing !important;
@@ -380,6 +376,11 @@ textarea {
     &:hover {
         background-color: lighten(#a1cbff, 10%);
     }
+}
+
+.card-img-top {
+    border-radius: 0;
+    border: 1px solid #ddd;
 }
 
 .card-text {
