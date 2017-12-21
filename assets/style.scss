@@ -386,6 +386,12 @@ textarea {
 }
 
 .zoom-img {
-    padding: 1rem !important;
+    box-shadow: 0 0 20px #999;
+    top: 4rem !important;
+    padding-bottom: 0 !important;
     background: transparent !important;
+}
+
+.zoom-overlay-open .fixed-top {
+    z-index: 1;
 }
