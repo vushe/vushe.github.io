@@ -371,16 +371,14 @@ textarea {
     border: none !important;
     background: #f7f7f7;
     transition: .15s ease-out !important;
-    padding: $element-spacing !important;
-
-    &:hover {
-        background-color: lighten(#a1cbff, 10%);
-    }
+    padding: $element-spacing * 3 !important;
 }
 
 .card-img-top {
     border-radius: 0;
-    border: 1px solid #ddd;
+    box-shadow: 0 20px 30px -10px #666;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .card-text {
@@ -390,5 +388,4 @@ textarea {
 .zoom-img {
     padding: 1rem !important;
     background: transparent !important;
-    border: none;
 }

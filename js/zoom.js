@@ -63,9 +63,9 @@
   ZoomService.prototype._activeZoomClose = function (forceDispose) {
     if (!this._activeZoom) return
 
-    // Loading thumbnail before closing - VD
-    this.zoom_out_src = $('.zoom-img').attr('data-zoom-out-src')
-    $('.zoom-img').attr('src', this.zoom_out_src)
+    // // Loading thumbnail before closing - VD
+    // this.zoom_out_src = $('.zoom-img').attr('data-zoom-out-src')
+    // $('.zoom-img').attr('src', this.zoom_out_src)
 
     if (forceDispose) {
       this._activeZoom.dispose()
@@ -158,8 +158,8 @@
       .attr('data-action', 'zoom-out')
 
     // Loading original image - VD
-    this.zoom_in_src = $(this._targetImage).attr('data-zoom-in-src')
-    $(this._targetImage).attr('src', this.zoom_in_src)
+    // this.zoom_in_src = $(this._targetImage).attr('data-zoom-in-src')
+    // $(this._targetImage).attr('src', this.zoom_in_src)
 
     this._overlay           = document.createElement('div')
     this._overlay.className = 'zoom-overlay'
