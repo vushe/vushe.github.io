@@ -20,7 +20,7 @@
                     <div class="col-sm-6 col-md-4 col-card-wrapper">
                         <div class="card">
                             <h3 class="card-title">{{ page.titles[forloop.index0] }}</h3>
-                            <img class="card-img-top" src="{{ page.images[forloop.index0] }}" alt="Card image cap" data-action="zoom">
+                            <img class="card-img-top" src="{{ page.thumbnails[forloop.index0] }}" data-zoom-in-src="{{ page.images[forloop.index0] }}" data-zoom-out-src="{{ page.thumbnails[forloop.index0] }}" alt="Card image cap" data-action="zoom">
                             <div class="card-block">
                                 <p class="card-text">{{ text | textilize }}</p>
                                 <p>

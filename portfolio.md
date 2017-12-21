@@ -24,6 +24,27 @@ titles:
     - GEF Vision - Autosalpa
     - GEF Vision - Simpelen Koulu
 
+thumbnails:
+    - /static/frontpage-main-bg.jpg
+    - /static/portfolio/etec.png
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+    - /static/frontpage-main-bg.jpg
+
 images:
     - /static/portfolio/etec.png
     - /static/frontpage-main-bg.jpg
