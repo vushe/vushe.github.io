@@ -371,7 +371,7 @@ textarea {
     border: none !important;
     background: #f7f7f7;
     transition: .15s ease-out !important;
-    padding: $element-spacing * 3 !important;
+    padding: $element-spacing $element-spacing * 3 !important;
 }
 
 .card-img-top {
@@ -394,4 +394,44 @@ textarea {
 
 .zoom-overlay-open .fixed-top {
     z-index: 1;
+}
+
+.zoom-overlay-open {
+    background: rgba(255, 255, 255, .5);
+}
+
+.portfolio {
+    & .h1-wrap {
+        background-color: #f7f7f7;
+        border: $element-spacing / 2 solid #fff !important;
+        margin-top: $element-spacing / 2;
+    }
+
+    & h1,
+    & h3 {
+        display: block;
+        line-height: 2;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+
+        &::after,
+        &::before {
+            background: linear-gradient(to left, transparent, #444, transparent);
+            content: '';
+            display: block;
+            height: 1px;
+        }
+    }
+
+    & h3 {
+        padding-top: 0;
+        padding-top: 1rem;
+
+        &::before {
+            display: none;
+        }
+    }
 }
