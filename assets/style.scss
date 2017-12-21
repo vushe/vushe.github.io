@@ -314,6 +314,10 @@ textarea {
 
 @media (max-width: $max-xs) {
 
+    :root {
+        font-size: 10px;
+    }
+
     .story,
     .contact {
         height: auto;
