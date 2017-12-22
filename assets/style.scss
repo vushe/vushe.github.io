@@ -12,12 +12,14 @@ $large-font-size: 3rem;
 $info-row-height: 22rem;
 
 // Bootstrap breakpoints
-$max-xs: 767px;
-$min-sm: 768px;
-$max-sm: 991px;
-$min-md: 992px;
-$max-md: 1199px;
-$min-lg: 1200px;
+$max-xs: 575px;
+$min-sm: 576px;
+$max-sm: 767px;
+$min-md: 768px;
+$max-md: 991px;
+$min-lg: 992px;
+$max-lg: 1199px;
+$min-xl: 1200px;
 
 
 body {
@@ -363,6 +365,16 @@ textarea {
     img.logo-chrome {
         width: 60%;
         height: auto;
+    }
+}
+
+@media (min-width: $min-sm) and (max-width: $max-sm) {
+    .pic-container {
+        padding-top: 65vw !important;
+
+        & h2 {
+            top: (65vw - 1vw) / 2  - 15vw;
+        }
     }
 }
 
