@@ -423,6 +423,10 @@ textarea {
         margin-top: $element-spacing / 2;
     }
 
+    & h1 {
+        font-weight: 700;
+    }
+
     & h1,
     & h3 {
         color: #fff;
