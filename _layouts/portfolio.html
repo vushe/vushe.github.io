@@ -25,7 +25,7 @@
                                 <p class="card-text">{{ text | textilize }}</p>
                                 <p>
                                     {% if page.urls[forloop.index0] != false %}
-                                        <a class="card-link" href=" {{ page.urls[forloop.index0] }}" target="_blank">{{ page.url-descriptions[forloop.index0] }}</a>
+                                        <a class="card-link underlined" href=" {{ page.urls[forloop.index0] }}" target="_blank">{{ page.url-descriptions[forloop.index0] }}</a>
                                     {% else %}
                                         <span>{{ page.url-descriptions[forloop.index0] }}</span>
                                     {% endif %}
