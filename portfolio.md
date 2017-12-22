@@ -11,7 +11,7 @@ titles:
     - GEF Vision - City of Seinäjoki
     - GEF Vision - Tampere Talo
     - GEF Vision - Valtimo
-    - GEF Vision - Lämpopartio
+    - GEF Vision - Lämpöpartio
     - GEF Vision - Dermosil
     - GEF Vision - Ruokkeen Lomakylä
     - GEF Vision - Matka24
