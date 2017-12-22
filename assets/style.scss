@@ -402,7 +402,7 @@ textarea {
 }
 
 .zoom-img {
-    box-shadow: 0 0 20px #999;
+    //box-shadow: 0 0 20px #666;
     top: 4rem !important;
     padding-bottom: 0 !important;
     background: transparent !important;
@@ -412,8 +412,9 @@ textarea {
     z-index: 1;
 }
 
-.zoom-overlay-open {
-    background: rgba(255, 255, 255, .5);
+.zoom-overlay {
+    background-image: radial-gradient(circle at bottom center, #e7e7e7 0%, #57a2ad 50%, #00242a 80%);
+    opacity: .75 !important;
 }
 
 .portfolio {
