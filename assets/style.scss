@@ -261,6 +261,7 @@ textarea {
     .slogan-row {
         padding-top: 3rem;
         padding-bottom: 3rem;
+
         & h1 {
             line-height: 1.5;
         }
@@ -385,8 +386,7 @@ textarea {
 .card {
     border-radius: 0;
     border: none !important;
-    background: #f7f7f7;
-    transition: .15s ease-out !important;
+    background-image: radial-gradient(circle at bottom center, #f7f7f7 0%, #57a2ad 50%, #00242a 80%);
     padding: $element-spacing $element-spacing * 3 !important;
 }
 
@@ -418,13 +418,14 @@ textarea {
 
 .portfolio {
     & .h1-wrap {
-        background-color: #f7f7f7;
+        background-image: linear-gradient(to bottom, #00242a, #57a2ad);
         border: $element-spacing / 2 solid #fff !important;
         margin-top: $element-spacing / 2;
     }
 
     & h1,
     & h3 {
+        color: #fff;
         display: block;
         line-height: 2;
         padding-top: 2rem;
@@ -435,7 +436,7 @@ textarea {
 
         &::after,
         &::before {
-            background: linear-gradient(to left, transparent, #444, transparent);
+            background: linear-gradient(to left, transparent, #fff, transparent);
             content: '';
             display: block;
             height: 1px;
