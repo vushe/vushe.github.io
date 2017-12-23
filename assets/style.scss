@@ -383,11 +383,21 @@ textarea {
     padding: $element-spacing / 2 !important;
 }
 
-.card {
+.card,
+.error-message-box {
     border-radius: 0;
     border: none !important;
     background-image: radial-gradient(circle at bottom center, #e7e7e7 0%, #57a2ad 50%, #00242a 80%);
     padding: $element-spacing $element-spacing * 3 !important;
+}
+
+.error-message-box {
+    background-image: radial-gradient(ellipse at 50% 90%, #e7e7e7, #57a2ad, #00242a);
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 22vh !important;
+    padding-bottom: 22vh !important;
 }
 
 .card-img-top {
@@ -417,7 +427,8 @@ textarea {
     opacity: .75 !important;
 }
 
-.portfolio {
+.portfolio,
+.page-not-found {
     & .h1-wrap {
         background-color: #00242a;
         border: $element-spacing / 2 solid #fff !important;

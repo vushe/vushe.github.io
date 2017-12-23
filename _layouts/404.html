@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body class="page-not-found">
+
+    {% include header.html %}
+
+    <div class="container-fluid">
+        <div class="row top-space-fix"></div>
+        <div class="row">
+            <div class="col-12 error-message-box">
+                <!-- <img src="<? themeRoot(View::getInstance()); ?>/images/etec-logo-transparent.svg"/> -->
+                <h1>{{ page.header }}</h1>
+                <p>
+                    {{ page.message }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+
+</body>
+
+</html>
