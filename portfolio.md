@@ -6,6 +6,7 @@ permalink: /portfolio/
 titles:
     - Etec Automation Oy
     - GEF Vision for Desktops
+    - aurinkovoimala.net
     - GEF Vision - Janakkala
     - GEF Vision - Hesburger
     - GEF Vision - City of Seinäjoki
@@ -22,6 +23,7 @@ titles:
 images:
     - /static/portfolio/etec.jpg
     - /static/portfolio/desktop-vision.jpg
+    - /static/portfolio/aurinkovoimala-net.jpg
     - /static/portfolio/janakkala.jpg
     - /static/portfolio/hesburger.jpg
     - /static/portfolio/seinajoki.jpg
@@ -40,6 +42,9 @@ texts:
         Website for <strong>Etec Automation Oy</strong>.
         Based on CMS <strong>Concrete5</strong>. Layout design and coding.
     - Layout design and coding.
+    - >-
+        Promo website for largest power plant in Finland.
+        Based on CMS <strong>Concrete5</strong>. Layout design and coding
     - Layout design and coding.
     - HTML5 programming.
     - Layout design and coding.
@@ -56,6 +61,7 @@ texts:
 url-descriptions:
     - http://www.etec.fi
     - Private webpages
+    - http://www.aurinkovoimala.net
     - Private webpage
     - Private webpage
     - Private webpage
@@ -72,6 +78,7 @@ url-descriptions:
 urls:
     - http://www.etec.fi
     - false
+    - http://www.aurinkovoimala.net
     - false
     - false
     - false
