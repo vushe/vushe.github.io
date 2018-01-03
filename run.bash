@@ -2,6 +2,7 @@
 
 # sudo apt install ruby-dev
 # sudo apt install gem
+# sudo apt-get install build-essential
 # sudo gem install jekyll
 # sudo gem install bundler
 # bundle install
