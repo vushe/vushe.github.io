@@ -9,6 +9,13 @@ titles:
     - GEF Vision for Desktops
     - GEF Vision - Janakkala
     - GEF Vision - Hesburger
+    - GEF Vision - Aalto
+    - GEF Vision - AS Sähkö
+    - GEF Vision - HUB Logistics
+    - GEF Vision - Kyminjoen Ravintolapalvelut
+    - GEF Vision - Lumme Energia
+    - GEF Vision - Micropolis
+    - GEF Vision - OSAO
     - GEF Vision - City of Seinäjoki
     - GEF Vision - Tampere Talo
     - GEF Vision - Valtimo
@@ -26,6 +33,13 @@ images:
     - /static/portfolio/desktop-vision.jpg
     - /static/portfolio/janakkala.jpg
     - /static/portfolio/hesburger.jpg
+    - /static/portfolio/aalto.jpg
+    - /static/portfolio/as-sahko.jpg
+    - /static/portfolio/hub-logistics.jpg
+    - /static/portfolio/kyminjoen-ravintolapalvelut.jpg
+    - /static/portfolio/lumme-energia.jpg
+    - /static/portfolio/micropolis.jpg
+    - /static/portfolio/osao.jpg
     - /static/portfolio/seinajoki.jpg
     - /static/portfolio/tampere-talo.jpg
     - /static/portfolio/valtimo.jpg
@@ -55,6 +69,13 @@ texts:
     - Layout design and coding.
     - Layout design and coding.
     - Layout design and coding.
+    - Layout design and coding.
+    - Layout design and coding.
+    - Layout design and coding.
+    - Layout design and coding.
+    - Layout design and coding.
+    - Layout design and coding.
+    - Layout design and coding.
     - Layout design (partly) and coding.
     - Layout design and coding.
 
@@ -62,6 +83,13 @@ url-descriptions:
     - http://www.etec.fi
     - http://www.aurinkovoimala.net
     - Private webpages
+    - Private webpage
+    - Private webpage
+    - Private webpage
+    - Private webpage
+    - Private webpage
+    - Private webpage
+    - Private webpage
     - Private webpage
     - Private webpage
     - Private webpage
@@ -78,6 +106,13 @@ url-descriptions:
 urls:
     - http://www.etec.fi
     - http://www.aurinkovoimala.net
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
+    - false
     - false
     - false
     - false
