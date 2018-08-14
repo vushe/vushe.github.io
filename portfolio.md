@@ -19,7 +19,6 @@ titles:
     - GEF Vision - City of Seinäjoki
     - GEF Vision - Tampere Talo
     - GEF Vision - Valtimo
-    - GEF Vision - Lämpöpartio
     - GEF Vision - Dermosil
     - GEF Vision - Ruokkeen Lomakylä
     - GEF Vision - Matka24
@@ -43,7 +42,6 @@ images:
     - /static/portfolio/seinajoki.jpg
     - /static/portfolio/tampere-talo.jpg
     - /static/portfolio/valtimo.jpg
-    - /static/portfolio/lampopartio.jpg
     - /static/portfolio/dermosil.jpg
     - /static/portfolio/ruokkeen-lomakyla.jpg
     - /static/portfolio/matka24.jpg
@@ -61,7 +59,6 @@ texts:
     - Layout design and coding.
     - Layout design and coding.
     - HTML5 programming.
-    - Layout design and coding.
     - Layout design and coding.
     - Layout design and coding.
     - Layout design and coding.
@@ -97,7 +94,6 @@ url-descriptions:
     - Private webpage
     - Private webpage
     - Private webpage
-    - Private webpage
     - Monitoring webpage
     - Private webpage
     - Private webpage
@@ -106,7 +102,6 @@ url-descriptions:
 urls:
     - http://www.etec.fi
     - http://www.aurinkovoimala.net
-    - false
     - false
     - false
     - false
