@@ -16,7 +16,7 @@ const generateRandomNumbers = () => {
     dom.question.innerText = `${num1} + ${num2}`;
 }
 
-const displayMessage = (message, messageType) => {
+const displayMessage = (message, messageType, disableTimeout = false) => {
     const htmlMessage = `
         <div class="alert alert-${messageType}" role="alert">
             ${message}
@@ -25,9 +25,11 @@ const displayMessage = (message, messageType) => {
     dom.message.innerHTML = htmlMessage;
     dom.answer.innerText = '';
 
-    setTimeout(() => {
-        dom.message.innerHTML = '';
-    }, config.messageTimeout);
+    if (!disableTimeout) {
+        setTimeout(() => {
+            dom.message.innerHTML = '';
+        }, config.messageTimeout);
+    }
 }
 
 dom.form.addEventListener('submit', event => {
@@ -39,7 +41,7 @@ dom.form.addEventListener('submit', event => {
     const sum = parseInt(num1) + parseInt(num2);
 
     if (answer === sum) {
-        displayMessage('Sending...', 'info');
+        displayMessage('Sending...', 'info', true);
 
         axios.post('https://formspree.io/mvovpynr', new FormData(dom.form))
             .then(res => {
