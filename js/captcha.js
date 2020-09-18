@@ -1,36 +1,43 @@
-function generateRandomNumbers() {
+const dom = {
+    form: document.querySelector('#contact-form'),
+    question: document.querySelector('#question'),
+    message: document.querySelector('#status'),
+    answer: document.querySelector('#answer'),
+};
 
-    var num1 = Math.floor(Math.random() * 10) + 1,
-        num2 = Math.floor(Math.random() * 10) + 1;
+const generateRandomNumbers = () => {
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
 
-    $("#question").text(num1 + ' + ' + num2);
-
+    dom.question.innerText = `${num1} + ${num2}`;
 }
 
-function displayMessage(message, message_type) {
+const displayMessage = (message, messageType) => {
+    const htmlMessage = `
+        <div class="alert alert-${messageType}" role="alert">
+            ${message}
+        </div>`;
 
-    var html_message='<div class="alert alert-' + message_type +
-        '" role = "alert" >' +
-        message + '</div>';
-
-
-    $("#status").html(html_message);
-    $("#answer").text("");
+    dom.message.innerHTML = htmlMessage;
+    dom.answer.innerText = '';
 }
 
-$("#contact-form").submit(function (event) {
+dom.form.addEventListener('submit', event => {
+    event.preventDefault();
 
-    var answer = parseInt($("#answer").val()),
-        equation = $("#question").text(),
-        num_arr = equation.split(/[+]/),
-        sum = parseInt(num_arr[0]) + parseInt(num_arr[1]);
+    const answer = parseInt(document.querySelector('#answer').value);
+    const equation = document.querySelector('#question').innerText;
+    const [ num1, num2]  = equation.split(/[+]/);
+    const sum = parseInt(num1) + parseInt(num2);
 
     if (answer === sum) {
-        displayMessage("Thanks!", 'success');
-    } else if (answer !== "") {
-        displayMessage("Number is incorrect. Please try again.", 'warning');
-        defaultPrevented = true;
-        event.preventDefault();
+        axios.post('https://formspree.io/mvovpynr', new FormData(dom.form))
+            .then(res => {
+                dom.form.reset();
+                displayMessage('Thanks!', 'success');
+            })
+            .catch(err => displayMessage('Something went wrong when submitting form, please try again', 'warning'));
+    } else if (answer !== '') {
+        displayMessage('Number is incorrect. Please try again.', 'warning');
     }
-
-})
+});
