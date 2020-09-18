@@ -5,6 +5,10 @@ const dom = {
     answer: document.querySelector('#answer'),
 };
 
+const config = {
+    messageTimeout: 5000, // In ms
+};
+
 const generateRandomNumbers = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
@@ -20,6 +24,10 @@ const displayMessage = (message, messageType) => {
 
     dom.message.innerHTML = htmlMessage;
     dom.answer.innerText = '';
+
+    setTimeout(() => {
+        dom.message.innerHTML = '';
+    }, config.messageTimeout);
 }
 
 dom.form.addEventListener('submit', event => {
@@ -27,7 +35,7 @@ dom.form.addEventListener('submit', event => {
 
     const answer = parseInt(document.querySelector('#answer').value);
     const equation = document.querySelector('#question').innerText;
-    const [ num1, num2]  = equation.split(/[+]/);
+    const [ num1, num2 ]  = equation.split(/[+]/);
     const sum = parseInt(num1) + parseInt(num2);
 
     if (answer === sum) {
@@ -38,6 +46,10 @@ dom.form.addEventListener('submit', event => {
             })
             .catch(err => displayMessage('Something went wrong when submitting form, please try again', 'warning'));
     } else if (answer !== '') {
-        displayMessage('Number is incorrect. Please try again.', 'warning');
+        displayMessage('Answer is incorrect. Please try again.', 'warning');
     }
 });
+
+dom.form.addEventListener('keydown', event => {
+    dom.message.innerHTML = '';
+})
