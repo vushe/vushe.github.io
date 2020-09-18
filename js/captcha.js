@@ -39,14 +39,20 @@ dom.form.addEventListener('submit', event => {
     const sum = parseInt(num1) + parseInt(num2);
 
     if (answer === sum) {
+        displayMessage('Sending...', 'info');
+
         axios.post('https://formspree.io/mvovpynr', new FormData(dom.form))
             .then(res => {
                 dom.form.reset();
                 displayMessage('Thanks!', 'success');
             })
-            .catch(err => displayMessage('Something went wrong when submitting form, please try again', 'warning'));
+            .catch(err => {
+                displayMessage('Something went wrong when submitting form, please try again', 'warning');
+            })
+            .finally(() => generateRandomNumbers());
     } else if (answer !== '') {
         displayMessage('Answer is incorrect. Please try again.', 'warning');
+        generateRandomNumbers();
     }
 });
 
