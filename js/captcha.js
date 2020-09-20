@@ -22,42 +22,51 @@ const displayMessage = (message, messageType, disableTimeout = false) => {
             ${message}
         </div>`;
 
-    dom.message.innerHTML = htmlMessage;
-    dom.answer.innerText = '';
-
-    if (!disableTimeout) {
-        setTimeout(() => {
-            dom.message.innerHTML = '';
-        }, config.messageTimeout);
+    if (dom.answer) {
+        dom.answer.innerText = '';
     }
+
+    if (dom.message) {
+        dom.message.innerHTML = htmlMessage;
+
+        if (!disableTimeout) {
+            setTimeout(() => {
+                dom.message.innerHTML = '';
+            }, config.messageTimeout);
+        }
+    }
+
 }
 
-dom.form.addEventListener('submit', event => {
-    event.preventDefault();
+if (dom.form && dom.answer && dom.question) {
 
-    const answer = parseInt(document.querySelector('#answer').value);
-    const equation = document.querySelector('#question').innerText;
-    const [ num1, num2 ]  = equation.split(/[+]/);
-    const sum = parseInt(num1) + parseInt(num2);
+    dom.form.addEventListener('submit', event => {
+        event.preventDefault();
 
-    if (answer === sum) {
-        displayMessage('Sending...', 'info', true);
+        const answer = parseInt(dom.answer.value);
+        const equation = dom.question.innerText;
+        const [ num1, num2 ]  = equation.split(/[+]/);
+        const sum = parseInt(num1) + parseInt(num2);
 
-        axios.post('https://formspree.io/mvovpynr', new FormData(dom.form))
-            .then(res => {
-                dom.form.reset();
-                displayMessage('Thanks!', 'success');
-            })
-            .catch(err => {
-                displayMessage('Something went wrong when submitting form, please try again', 'warning');
-            })
-            .finally(() => generateRandomNumbers());
-    } else if (answer !== '') {
-        displayMessage('Answer is incorrect. Please try again.', 'warning');
-        generateRandomNumbers();
-    }
-});
+        if (answer === sum) {
+            displayMessage('Sending...', 'info', true);
 
-dom.form.addEventListener('keydown', event => {
-    dom.message.innerHTML = '';
-})
+            axios.post('https://formspree.io/mvovpynr', new FormData(dom.form))
+                .then(res => {
+                    dom.form.reset();
+                    displayMessage('Thanks!', 'success');
+                })
+                .catch(err => {
+                    displayMessage('Something went wrong when submitting form, please try again', 'warning');
+                })
+                .finally(() => generateRandomNumbers());
+        } else if (answer !== '') {
+            displayMessage('Answer is incorrect. Please try again.', 'warning');
+            generateRandomNumbers();
+        }
+    });
+
+    dom.form.addEventListener('keydown', event => {
+        dom.message.innerHTML = '';
+    })
+}
