@@ -6,6 +6,7 @@
 # sudo gem install jekyll
 # sudo gem install bundler
 # bundle install
+# bundle update
 # sudo pip install livereload
 
 # Run livereload if not running yet

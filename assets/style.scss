@@ -131,7 +131,7 @@ h2 {
 .contact {
     min-height: $info-row-height;
 
-    & .pic-container {
+    .pic-container {
         background-size: cover !important;
         background-position: 50% 50% !important;
         position: relative;
@@ -170,7 +170,7 @@ h2 {
         padding: $info-row-height / 7 $info-row-height / 5;
     }
 
-    & h1 {
+    h1 {
         line-height: 1.5;
     }
 }
@@ -179,14 +179,14 @@ h2 {
     font-size: 2rem;
     padding: 2rem !important;
 
-    & a {
+    a {
         color: $dark-grey;
         &:hover {
             color: $blue;
         }
     }
 
-    & .fa {
+    .fa {
         padding: 0 1rem;
     }
 }
@@ -310,6 +310,7 @@ textarea {
     :root {
         font-size: 13px;
     }
+
     .text-container {
         padding: 1rem !important;
     }
@@ -429,18 +430,18 @@ textarea {
 
 .portfolio,
 .page-not-found {
-    & .h1-wrap {
+    .h1-wrap {
         background-color: #00242a;
         border: $element-spacing / 2 solid #fff !important;
         margin-top: $element-spacing / 2;
     }
 
-    & h1 {
+    h1 {
         font-weight: 700;
     }
 
-    & h1,
-    & h3 {
+    h1,
+    h3 {
         color: #fff;
         display: block;
         line-height: 2;
@@ -459,7 +460,7 @@ textarea {
         }
     }
 
-    & h3 {
+    h3 {
         padding-top: 0;
         padding-top: 1rem;
 

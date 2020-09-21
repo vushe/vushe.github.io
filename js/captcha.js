@@ -1,4 +1,5 @@
 const dom = {
+    body: document.querySelector('body'),
     form: document.querySelector('#contact-form'),
     question: document.querySelector('#question'),
     message: document.querySelector('#status'),
@@ -39,7 +40,6 @@ const displayMessage = (message, messageType, disableTimeout = false) => {
 }
 
 if (dom.form && dom.answer && dom.question) {
-
     dom.form.addEventListener('submit', event => {
         event.preventDefault();
 
@@ -69,4 +69,8 @@ if (dom.form && dom.answer && dom.question) {
     dom.form.addEventListener('keydown', event => {
         dom.message.innerHTML = '';
     })
+}
+
+if (dom.body && dom.form) {
+    dom.body.addEventListener('load', generateRandomNumbers(), { once: true });
 }
