@@ -1,4 +1,6 @@
-const dom = {
+'use strict';
+
+const captchaDom = {
     body: document.querySelector('body'),
     form: document.querySelector('#contact-form'),
     question: document.querySelector('#question'),
@@ -14,7 +16,7 @@ const generateRandomNumbers = () => {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
 
-    dom.question.innerText = `${num1} + ${num2}`;
+    captchaDom.question.innerText = `${num1} + ${num2}`;
 }
 
 const displayMessage = (message, messageType, disableTimeout = false) => {
@@ -23,37 +25,37 @@ const displayMessage = (message, messageType, disableTimeout = false) => {
             ${message}
         </div>`;
 
-    if (dom.answer) {
-        dom.answer.innerText = '';
+    if (captchaDom.answer) {
+        captchaDom.answer.innerText = '';
     }
 
-    if (dom.message) {
-        dom.message.innerHTML = htmlMessage;
+    if (captchaDom.message) {
+        captchaDom.message.innerHTML = htmlMessage;
 
         if (!disableTimeout) {
             setTimeout(() => {
-                dom.message.innerHTML = '';
+                captchaDom.message.innerHTML = '';
             }, config.messageTimeout);
         }
     }
 
 }
 
-if (dom.form && dom.answer && dom.question) {
-    dom.form.addEventListener('submit', event => {
+if (captchaDom.form && captchaDom.answer && captchaDom.question) {
+    captchaDom.form.addEventListener('submit', event => {
         event.preventDefault();
 
-        const answer = parseInt(dom.answer.value);
-        const equation = dom.question.innerText;
+        const answer = parseInt(captchaDom.answer.value);
+        const equation = captchaDom.question.innerText;
         const [ num1, num2 ]  = equation.split(/[+]/);
         const sum = parseInt(num1) + parseInt(num2);
 
         if (answer === sum) {
             displayMessage('Sending...', 'info', true);
 
-            axios.post('https://formspree.io/mvovpynr', new FormData(dom.form))
+            axios.post('https://formspree.io/mvovpynr', new FormData(captchaDom.form))
                 .then(res => {
-                    dom.form.reset();
+                    captchaDom.form.reset();
                     displayMessage('Thanks!', 'success');
                 })
                 .catch(err => {
@@ -66,11 +68,11 @@ if (dom.form && dom.answer && dom.question) {
         }
     });
 
-    dom.form.addEventListener('keydown', event => {
-        dom.message.innerHTML = '';
+    captchaDom.form.addEventListener('keydown', event => {
+        captchaDom.message.innerHTML = '';
     })
 }
 
-if (dom.body && dom.form) {
-    dom.body.addEventListener('load', generateRandomNumbers(), { once: true });
+if (captchaDom.body && captchaDom.form) {
+    captchaDom.body.addEventListener('load', generateRandomNumbers(), { once: true });
 }
